@@ -6,11 +6,13 @@ public class Auto {
 	private double prijs;
 
 	public Auto(String merk, String eigenaar, double prijs) {
-		// TODO: implementeer deze constructor
+		this.merk = merk;
+		this.eigenaar = eigenaar;
+		this.prijs = prijs;
 	}
 
 	public Auto(String merk, double prijs) {
-		// TODO: implementeer deze constructor
+		this(merk, "Onbekend", prijs);
 	}
 
 	public double getPrijs() {
@@ -30,6 +32,6 @@ public class Auto {
 	}
 
 	public void verhoogPrijs(int percent) {
-		// TODO: implementeer deze methode
+		prijs = prijs * (1 + percent / 100.0);
 	}
 }
